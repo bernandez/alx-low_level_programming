@@ -1,2 +1,1 @@
-# function implementation in C
-and loops
+**This directory contains scripts on C functions and nested loops**

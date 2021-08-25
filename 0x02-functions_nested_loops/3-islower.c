@@ -1,11 +1,17 @@
+#include <stdio.h>
 #include "holberton.h"
-/**
- * _islower - check if the character is lowerCase
- * @c: the character to be cheked
- * Return: 1 if lower, 0 if capital
- */
 
+/**
+ * _islower - check the code for ALX School students.
+ *@c: parameter the int will use to check for the argument of the function
+ * Return: Always 0.
+ */
 int _islower(int c)
 {
-	return (c >= 97 && c <= 122);
+if (c >= 'a' &&  c <= 'z')
+{
+return (1);
+}
+else
+return (0);
 }

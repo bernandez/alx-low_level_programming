@@ -1,31 +1,27 @@
 #include <stdio.h>
 #include "holberton.h"
-/**
- * main - Entry point to the function
- * Description: prints the fibonacci numbers
- * below 50
- * Return: 0 success
- */
 
+/**
+ * main - Prints fibonacci numbers
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-
-	int i;
-	long t1 = 0, t2 = 1, nextterm = t1 + t2;
-
-	for (i = 0; i < 50; i++)
-	{
-		if (i == 49)
-		{
-			printf("%lu\n", nextterm);
-		}
-		else
-		{
-			printf("%lu, ", nextterm);
-		}
-		t1 = t2;
-		t2 = nextterm;
-		nextterm = t1 + t2;
-	}
-	return (0);
+unsigned long count, x, y, z;
+x = 0;
+y = 1;
+for (count = 0; count < 50; count++)
+{
+z = x + y;
+x = y;
+y = z;
+printf("%lu", z);
+if (count == 49)
+putchar('\n');
+else
+{
+printf(", ");
+}
+}
+return (0);
 }

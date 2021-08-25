@@ -1,18 +1,17 @@
+#include <stdio.h>
 #include "holberton.h"
-/**
- * _isalpha - check if the character is a letter
- * @c: the character to be cheked
- * Return: 1 if letter, 0 otherwise
- */
 
+/**
+ * _isalpha - Check for alphabet
+ * @c: int for the argument of the function
+ * Return: Always 0.
+ */
 int _isalpha(int c)
 {
-	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+{
+return (1);
+}
+else
+return (0);
 }

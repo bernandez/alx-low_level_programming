@@ -1,25 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - Entry point of the program
- * Description: sums the natural numbers below
- * @n that is divisible by both 5 and 3
- * Return: 0 (success)
+ * main - computes and prints the sum of all the multiples of
+ * 3 or 5 below 1024.
+ * Return: Nothing.
  */
 
 int main(void)
 {
-	int i, n, sum;
-
-	n = 1024;
-	for (i = 1; i < n; i++)
-	{
-		if ((i % 3 == 0) || (i % 5 == 0))
-		{
-			sum += i;
-		}
-	}
-	printf("%d", sum);
-	printf("\n");
-	return (0);
+int n, res;
+for (n = 0; n < 1024; n++)
+if (n % 3 == 0 || n % 5 == 0)
+res += n;
+printf("%d\n", res);
+return (0);
 }
